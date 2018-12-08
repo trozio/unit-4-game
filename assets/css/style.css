@@ -1,0 +1,28 @@
+#blue{
+	width: 200px;
+
+}
+#orange{
+	width: 200px;
+
+}#green{
+	width: 200px;
+
+}
+#purple{
+	width: 200px;
+	padding-left: 12px;
+
+}
+.targetNumber{
+	font-size: 64px;
+}
+.wins{
+	font-size: 24px;
+}
+.losses{
+	font-size: 24px;
+}
+.score{
+	font-size: 34px;
+}
