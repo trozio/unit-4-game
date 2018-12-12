@@ -7,16 +7,6 @@ let wins = 0;
 let losses = 0;
 let playerScore = 0;
 
-if(playerScore === targetNumber){
-	alert("You win!");
-	playerScore = 0;
-	wins++;
-
-}
-if(playerScore > targetNumber){
-	alert("You lost!");
-	losses++;
-}
 
 $("div.targetNumber").html(targetNumber);
 $("div.wins").html("Wins: " + wins);
@@ -47,3 +37,14 @@ $("#green").on("click", function(){
 	$("div.score").html("Your score is: " + playerScore);
 
 });
+
+if(playerScore === targetNumber){
+	alert("You win!");
+	playerScore = 0;
+	wins++;
+
+}
+if(playerScore > targetNumber){
+	alert("You lost!");
+	losses++;
+}
