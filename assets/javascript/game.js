@@ -12,39 +12,87 @@ $("div.targetNumber").html(targetNumber);
 $("div.wins").html("Wins: " + wins);
 $("div.losses").html("Losses " + losses);
 
+function newGame(){
+	playerScore = 0;
+	targetNumber = Math.floor(Math.random()* 120) + 19;
+	crystalValue = Math.floor(Math.random() * 12) + 1;
+	crystalValue2 = Math.floor(Math.random() * 12) + 1;
+	crystalValue3 = Math.floor(Math.random() * 12) + 1;
+	crystalValue4 = Math.floor(Math.random() * 12) + 1;
+	$("div.targetNumber").html(targetNumber);
+	$("div.wins").html("Wins: " + wins);
+	$("div.losses").html("Losses " + losses);
+}
 
 
 $("#blue").on("click", function(){
 	playerScore = playerScore + crystalValue;
 	$("div.score").html("Your score is: " + playerScore);
+	if(playerScore === targetNumber){
+		alert("You win!");
+		playerScore = 0;
+		wins++;
+		newGame();
+	}
+	if(playerScore > targetNumber){
+		alert("You lost!");
+		losses++;
+		newGame();
+	}
+
 
 });
 
 $("#orange").on("click", function(){
 	playerScore = playerScore + crystalValue2;
 	$("div.score").html("Your score is: " + playerScore);
+	if(playerScore === targetNumber){
+		alert("You win!");
+		playerScore = 0;
+		wins++;
+		newGame();
+	}
+	if(playerScore > targetNumber){
+		alert("You lost!");
+		losses++;
+		newGame();
+	}
+
 
 });
 
 $("#purple").on("click", function(){
 	playerScore = playerScore + crystalValue3;
 	$("div.score").html("Your score is: " + playerScore);
+	if(playerScore === targetNumber){
+		alert("You win!");
+		playerScore = 0;
+		wins++;
+		newGame();
+	}
+	if(playerScore > targetNumber){
+		alert("You lost!");
+		losses++;
+		newGame();
+	}
+
 
 });
 
 $("#green").on("click", function(){
 	playerScore = playerScore + crystalValue4;
 	$("div.score").html("Your score is: " + playerScore);
+	if(playerScore === targetNumber){
+		alert("You win!");
+		playerScore = 0;
+		wins++;
+		newGame();
+	}
+	if(playerScore > targetNumber){
+		alert("You lost!");
+		losses++;
+		newGame();
+	}
+
 
 });
-
-if(playerScore === targetNumber){
-	alert("You win!");
-	playerScore = 0;
-	wins++;
-
-}
-if(playerScore > targetNumber){
-	alert("You lost!");
-	losses++;
-}

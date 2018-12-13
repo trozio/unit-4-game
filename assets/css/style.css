@@ -1,3 +1,7 @@
+body{
+	background: url("/Users/Daniel.DANISURFACE/Documents/GitHub/Projects/unit-4-game/assets/images/crystalcave.jpg");
+
+}
 #blue{
 	width: 200px;
 
@@ -14,15 +18,31 @@
 	padding-left: 12px;
 
 }
+h1{
+	color: white;
+	text-align: center;
+}
 .targetNumber{
 	font-size: 64px;
+	color: white;
+	text-align: center;
 }
 .wins{
 	font-size: 24px;
+	color: white;
+	text-align: center;
 }
 .losses{
 	font-size: 24px;
+	color: white;
+	text-align: center;
 }
 .score{
 	font-size: 34px;
+	color: white;
+	text-align: center;
+}
+.wrapper{
+	text-align: center;
+	top: ;
 }
