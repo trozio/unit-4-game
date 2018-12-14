@@ -14,7 +14,7 @@ $("div.losses").html("Losses " + losses);
 
 function newGame(){
 	playerScore = 0;
-	targetNumber = Math.floor(Math.random()* 120) + 19;
+	targetNumber = Math.floor(Math.random() * 120) + 19;
 	crystalValue = Math.floor(Math.random() * 12) + 1;
 	crystalValue2 = Math.floor(Math.random() * 12) + 1;
 	crystalValue3 = Math.floor(Math.random() * 12) + 1;
@@ -30,12 +30,14 @@ $("#blue").on("click", function(){
 	$("div.score").html("Your score is: " + playerScore);
 	if(playerScore === targetNumber){
 		alert("You win!");
+		alert("Click on any crystal to reset your score");
 		playerScore = 0;
 		wins++;
 		newGame();
 	}
 	if(playerScore > targetNumber){
 		alert("You lost!");
+		alert("Click on any crystal to reset your score");
 		losses++;
 		newGame();
 	}
@@ -48,12 +50,14 @@ $("#orange").on("click", function(){
 	$("div.score").html("Your score is: " + playerScore);
 	if(playerScore === targetNumber){
 		alert("You win!");
+		alert("Click on any crystal to reset your score");
 		playerScore = 0;
 		wins++;
 		newGame();
 	}
 	if(playerScore > targetNumber){
 		alert("You lost!");
+		alert("Click on any crystal to reset your score");
 		losses++;
 		newGame();
 	}
@@ -66,12 +70,14 @@ $("#purple").on("click", function(){
 	$("div.score").html("Your score is: " + playerScore);
 	if(playerScore === targetNumber){
 		alert("You win!");
+		alert("Click on any crystal to reset your score");
 		playerScore = 0;
 		wins++;
 		newGame();
 	}
 	if(playerScore > targetNumber){
 		alert("You lost!");
+		alert("Click on any crystal to reset your score");
 		losses++;
 		newGame();
 	}
@@ -84,12 +90,14 @@ $("#green").on("click", function(){
 	$("div.score").html("Your score is: " + playerScore);
 	if(playerScore === targetNumber){
 		alert("You win!");
+		alert("Click on any crystal to reset your score");
 		playerScore = 0;
 		wins++;
 		newGame();
 	}
 	if(playerScore > targetNumber){
 		alert("You lost!");
+		alert("Click on any crystal to reset your score");
 		losses++;
 		newGame();
 	}
